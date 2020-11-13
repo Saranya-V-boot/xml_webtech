@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  
+   <h1 id="demo1"  style="text-align:center"></h1>
+<h1 id="demo2" style="color:red"></h1>
+<h1 id="demo3" style="color:blue">
+</h1>
+
+
+<script>
+	var text, parser, xmlDoc, i, txt="";
+	text ="<student_details><student><name>Saranya V</name><age>age : 20</age><rollno>61628</rollno><year>2nd year</year><branch>IT dept</branch><course>web technology</course><mail>saranyav@student.tce.edu</mail><ph>7200282455</ph></student></student_details>";
+	parser = new DOMParser();
+	xmlDoc = parser.parseFromString(text,"text/xml");
+	var c=xmlDoc.getElementsByTagName("student_details")[0].childElementCount;
+	document.getElementById("demo1").innerHTML =c;
+	document.getElementById("demo2").innerHTML =xmlDoc.getElementsByTagName("student")[0].parentNode.nodeName;
+
+    	for (i = 0; i < c; i++) {
+		txt = txt + xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue + "<br>" +
+		xmlDoc.getElementsByTagName("rollno")[i].childNodes[0].nodeValue+ "<br>"+
+		xmlDoc.getElementsByTagName("course")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("branch")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("ph")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("mail")[i].childNodes[0].nodeValue+"<br>"
+		xmlDoc.getElementsByTagName("year")[i].childNodes[0].nodeValue+"<hr>";
+	}
+	document.getElementById("demo3").innerHTML =txt;
+</script>
+
+
+
+
+<h1 id="id0" style="text-align:center">Have you finished yesterday's work ?</h1>
+<h1 id="id1" style="text-align:center">VERY good !!</h1>
+<button type="button" onclick="document.getElementById('id1').style.color = 'green'" style="text-align:center">
+If Yes, Click Me!</button>
+<h1 id="id2" style="text-align:center">Please complete It !</h1>
+<button type="button" onclick="document.getElementById('id2').style.color = 'red'">
+
+If No ,Click Me!</button>
+
+<button onclick="displayDate()" style="text-align:center">View date :</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+
+<h2 style="text-align:center">Home Work</h2>
+
+<p style="text-align:center">Click here to view your work</p>
+
+<button id="myBtn" style="text-align:center">View H/W</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("YOU HAVE NO WORK TODAY !!");
+});
+</script>
+
+   
+   
+   
+   
+   
+
+</body>
+</html>

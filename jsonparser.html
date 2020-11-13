@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Staff - Aligned <em></em></h1>
+
+<h3 id="demo"></h3>
+<h3 id="demo1"></h3>
+
+<script>
+var text = '{"name": "Saranya V","age": "20","rollno": "61628","year": "2","branch": "IT","course": "web technology","mail": "saranyav@student.tce.edu","ph": "7200282455"}';
+var prof = '{"name": "Miss. Angelina","age": "33","prof_id": "61628","yearofexperience": "2","branch": "IT","course": "web technology","mail": "saranyav@professor.tce.edu","ph": "7200282455"}';
+var obj = JSON.parse(text, function (key, value) {
+  if (key == "name") {
+    return value.toUpperCase();
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.mail + ", " + obj.branch; 
+
+
+var obj1 = JSON.parse(prof, function (key, value) {
+  if (key == "name") {
+    return value.toUpperCase();
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo1").innerHTML = obj1.name + ", " + obj1.course + ", " + obj1.yearofexperience + " (year of experience)"; 
+</script>
+
+</body>
+</html>

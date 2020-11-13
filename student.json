@@ -1,0 +1,60 @@
+{
+  "student_details": {
+    "student": [
+      {
+        "name": "Saranya V",
+        "age": "20",
+        "rollno": "61628",
+        "year": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "saranyav@student.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Subha sri S",
+        "age": "19",
+        "rollno": "61628",
+        "regno": "18IT080",
+        "year": "1",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "subhasri@student.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Saran V",
+        "age": "21",
+        "rollno": "61628",
+        "regno": "18IT080",
+        "year": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "saranyav@student.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Harini V A",
+        "age": "20",
+        "rollno": "61628",
+        "regno": "18IT080",
+        "year": "1",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "hariniva@student.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Dhivya P",
+        "age": "19",
+        "rollno": "61628",
+        "regno": "18IT080",
+        "year": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "dhivyap@student.tce.edu",
+        "ph": "7200282455"
+      }
+    ]
+  }
+}

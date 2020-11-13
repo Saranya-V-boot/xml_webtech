@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="professor_details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="professor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="professor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="age"/>
+        <xs:element ref="prof_id"/>
+        <xs:element ref="yearofexperience"/>
+        <xs:element ref="branch"/>
+        <xs:element ref="course"/>
+        <xs:element ref="mail"/>
+        <xs:element ref="ph"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="age" type="xs:integer"/>
+  <xs:element name="prof_id" type="xs:integer"/>
+  <xs:element name="yearofexperience" type="xs:integer"/>
+  <xs:element name="branch" type="xs:NCName"/>
+  <xs:element name="course" type="xs:string"/>
+  <xs:element name="mail" type="xs:string"/>
+  <xs:element name="ph" type="xs:integer"/>
+</xs:schema>

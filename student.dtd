@@ -1,0 +1,45 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT student_details (student)+>
+<!ATTLIST student_details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT student (name,age,rollno,regno?,year,branch,course,mail,ph)>
+<!ATTLIST student
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT age (#PCDATA)>
+<!ATTLIST age
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rollno (#PCDATA)>
+<!ATTLIST rollno
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT regno (#PCDATA)>
+<!ATTLIST regno
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT branch (#PCDATA)>
+<!ATTLIST branch
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST course
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT mail (#PCDATA)>
+<!ATTLIST mail
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ph (#PCDATA)>
+<!ATTLIST ph
+  xmlns CDATA #FIXED ''>

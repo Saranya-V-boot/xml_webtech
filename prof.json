@@ -1,0 +1,56 @@
+{
+  "professor_details": {
+    "professor": [
+      {
+        "name": "Ms.Saranya V",
+        "age": "33",
+        "prof_id": "61628",
+        "yearofexperience": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "saranyav@professor.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Ms.Subha sri S",
+        "age": "33",
+        "prof_id": "61629",
+        "yearofexperience": "1",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "subhasri@professor.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Mrs.Saran V",
+        "age": "33",
+        "prof_id": "61638",
+        "yearofexperience": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "saranyav@professor.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Ms.Harini V A",
+        "age": "29",
+        "prof_id": "61648",
+        "yearofexperience": "1",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "hariniva@professor.tce.edu",
+        "ph": "7200282455"
+      },
+      {
+        "name": "Ms.Dhivya P",
+        "age": "33",
+        "prof_id": "61658",
+        "yearofexperience": "2",
+        "branch": "IT",
+        "course": "web technology",
+        "mail": "dhivyap@professor.tce.edu",
+        "ph": "7200282455"
+      }
+    ]
+  }
+}

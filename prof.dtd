@@ -1,0 +1,42 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT professor_details (professor)+>
+<!ATTLIST professor_details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT professor (name,age,prof_id,yearofexperience,branch,course,
+                     mail,ph)>
+<!ATTLIST professor
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT age (#PCDATA)>
+<!ATTLIST age
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT prof_id (#PCDATA)>
+<!ATTLIST prof_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT yearofexperience (#PCDATA)>
+<!ATTLIST yearofexperience
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT branch (#PCDATA)>
+<!ATTLIST branch
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST course
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT mail (#PCDATA)>
+<!ATTLIST mail
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ph (#PCDATA)>
+<!ATTLIST ph
+  xmlns CDATA #FIXED ''>

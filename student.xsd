@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="student_details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="student"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="age"/>
+        <xs:element ref="rollno"/>
+        <xs:element minOccurs="0" ref="regno"/>
+        <xs:element ref="year"/>
+        <xs:element ref="branch"/>
+        <xs:element ref="course"/>
+        <xs:element ref="mail"/>
+        <xs:element ref="ph"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="age" type="xs:integer"/>
+  <xs:element name="rollno" type="xs:integer"/>
+  <xs:element name="regno" type="xs:NMTOKEN"/>
+  <xs:element name="year" type="xs:integer"/>
+  <xs:element name="branch" type="xs:NCName"/>
+  <xs:element name="course" type="xs:string"/>
+  <xs:element name="mail" type="xs:string"/>
+  <xs:element name="ph" type="xs:integer"/>
+</xs:schema>
